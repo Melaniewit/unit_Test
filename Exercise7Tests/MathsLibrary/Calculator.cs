@@ -1,11 +1,19 @@
 ﻿
+
 namespace MathsLibrary
 {
     public class Calculator
     {
         public static int Add(int num1, int num2)
         {
-            throw new NotImplementedException();
+            return num1+num2;
+        }
+
+       
+
+        public static int  Sub(int arg1, int arg2)
+        {
+            return arg1-arg2;
         }
     }
 }

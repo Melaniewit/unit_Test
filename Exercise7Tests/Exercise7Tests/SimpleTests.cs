@@ -19,5 +19,22 @@ namespace Exercise_Tests
             // Assert
             Assert.Equal(expectedValue, sum);
         }
+
+        [Theory]
+        [InlineData(5,3,2)]
+        [InlineData(6,3,3)]
+
+        public void Sub_Two_Numbers(int arg1,int arg2, int arg3)
+        {
+            //Act
+            var result=Calculator.Sub(arg1, arg2);
+
+
+            //Assert
+            Assert.Equal(arg3, result);
+
+        }
+
+
     }
 }
